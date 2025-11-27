@@ -1,3 +1,4 @@
+
 import streamlit as st
 import numpy as np, cv2, pickle, tensorflow as tf
 from PIL import Image
@@ -46,7 +47,7 @@ else:
     if st.button("Cerrar sesión"):
         st.session_state.user = None
         st.rerun()
-    
+
     st.markdown("### ¿En qué lugar estás?")
     file2 = st.file_uploader("Sube foto del lugar", ["jpg","jpeg","png"], key=2)
     if file2:
